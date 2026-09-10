@@ -1,11 +1,75 @@
 {
   "currentVersion": "2026.9.3",
   "versionHash": "1391f7c",
-  "versionCheckedAt": "2026-09-10T21:32:00+02:00",
+  "versionCheckedAt": "2026-09-10T21:33:00+02:00",
   "lastVersionChange": null,
   "learningPhase": 1,
   "phaseName": "Core Concepts",
-  "queue": [],
+  "queue": [
+    {
+      "topic": "Agent Runtime & Workspace",
+      "source": "concepts/agent.md, concepts/agent-workspace.md",
+      "difficulty": "beginner",
+      "section": "Core",
+      "estimatedLessons": 2,
+      "priority": 1,
+      "addedAt": "2026-09-10T21:33:00+02:00"
+    },
+    {
+      "topic": "Session Management & Routing",
+      "source": "concepts/session.md",
+      "difficulty": "beginner",
+      "section": "Core",
+      "estimatedLessons": 2,
+      "priority": 1,
+      "addedAt": "2026-09-10T21:33:00+02:00"
+    },
+    {
+      "topic": "Memory System Overview",
+      "source": "concepts/memory.md",
+      "difficulty": "beginner",
+      "section": "Core",
+      "estimatedLessons": 2,
+      "priority": 1,
+      "addedAt": "2026-09-10T21:33:00+02:00"
+    },
+    {
+      "topic": "Tools Overview & Categories",
+      "source": "tools/index.md",
+      "difficulty": "beginner",
+      "section": "Tools",
+      "estimatedLessons": 1,
+      "priority": 2,
+      "addedAt": "2026-09-10T21:33:00+02:00"
+    },
+    {
+      "topic": "Exec Tool & Shell Execution",
+      "source": "tools/exec.md",
+      "difficulty": "intermediate",
+      "section": "Tools",
+      "estimatedLessons": 3,
+      "priority": 1,
+      "addedAt": "2026-09-10T21:33:00+02:00"
+    },
+    {
+      "topic": "Sub-agents & Delegation",
+      "source": "tools/subagents.md",
+      "difficulty": "intermediate",
+      "section": "Core",
+      "estimatedLessons": 2,
+      "priority": 2,
+      "addedAt": "2026-09-10T21:33:00+02:00"
+    },
+    {
+      "topic": "Automations & Scheduling",
+      "source": "automation/index.md, automation/cron-jobs.md",
+      "difficulty": "intermediate",
+      "section": "Core",
+      "estimatedLessons": 3,
+      "priority": 1,
+      "addedAt": "2026-09-10T21:33:00+02:00"
+    }
+  ],
   "completedTopics": [],
   "skippedTopics": [],
   "totalLessonsDelivered": 0,
@@ -15,5 +79,5 @@
   "researchJobId": "a4d548e1-9dda-4917-9be0-2f7fae348584",
   "deliveryJobId": "59423975-1f51-4c31-b0b7-1b5e5b12c03a",
   "createdAt": "2026-09-10T21:32:00+02:00",
-  "updatedAt": "2026-09-10T21:32:00+02:00"
+  "updatedAt": "2026-09-10T21:33:00+02:00"
 }
