@@ -12,8 +12,8 @@
   "currentStreak": 0,
   "lastLessonDate": null,
   "nextResearchDate": "2026-09-14T10:00:00+02:00",
-  "researchJobId": null,
-  "deliveryJobId": null,
+  "researchJobId": "a4d548e1-9dda-4917-9be0-2f7fae348584",
+  "deliveryJobId": "59423975-1f51-4c31-b0b7-1b5e5b12c03a",
   "createdAt": "2026-09-10T21:32:00+02:00",
   "updatedAt": "2026-09-10T21:32:00+02:00"
 }
