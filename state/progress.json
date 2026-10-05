@@ -1,83 +1,165 @@
 {
   "currentVersion": "2026.9.3",
   "versionHash": "1391f7c",
-  "versionCheckedAt": "2026-09-10T21:33:00+02:00",
+  "versionCheckedAt": "2026-10-05T09:30:00+02:00",
   "lastVersionChange": null,
   "learningPhase": 1,
   "phaseName": "Core Concepts",
   "queue": [
     {
+      "topic": "Session State Awareness",
+      "source": "concepts/session-state.md",
+      "difficulty": "advanced",
+      "section": "Core Concepts",
+      "estimatedLessons": 2,
+      "priority": 3,
+      "addedAt": "2026-09-21T10:00:00+02:00"
+    },
+    {
+      "topic": "Heartbeat Automation",
+      "source": "gateway/heartbeat.md",
+      "difficulty": "intermediate",
+      "section": "Gateway",
+      "estimatedLessons": 2,
+      "priority": 2,
+      "addedAt": "2026-09-21T10:00:00+02:00"
+    },
+    {
+      "topic": "Context: What the Model Sees",
+      "source": "concepts/context.md",
+      "difficulty": "beginner",
+      "section": "Core Concepts",
+      "estimatedLessons": 1,
+      "priority": 1,
+      "addedAt": "2026-10-05T09:30:00+02:00"
+    },
+    {
+      "topic": "System Prompt Assembly",
+      "source": "concepts/system-prompt.md",
+      "difficulty": "intermediate",
+      "section": "Core Concepts",
+      "estimatedLessons": 1,
+      "priority": 2,
+      "addedAt": "2026-10-05T09:30:00+02:00"
+    },
+    {
+      "topic": "Agent Loop Lifecycle",
+      "source": "concepts/agent-loop.md",
+      "difficulty": "intermediate",
+      "section": "Core Concepts",
+      "estimatedLessons": 2,
+      "priority": 2,
+      "addedAt": "2026-10-05T09:30:00+02:00"
+    },
+    {
+      "topic": "Compaction & Session Pruning",
+      "source": "concepts/compaction.md, concepts/session-pruning.md",
+      "difficulty": "intermediate",
+      "section": "Core Concepts",
+      "estimatedLessons": 2,
+      "priority": 2,
+      "addedAt": "2026-10-05T09:30:00+02:00"
+    },
+    {
+      "topic": "Memory Search & Hybrid Retrieval",
+      "source": "concepts/memory-search.md",
+      "difficulty": "intermediate",
+      "section": "Memory",
+      "estimatedLessons": 1,
+      "priority": 3,
+      "addedAt": "2026-10-05T09:30:00+02:00"
+    },
+    {
+      "topic": "Exec Approvals & Allowlists",
+      "source": "tools/exec-approvals.md",
+      "difficulty": "advanced",
+      "section": "Tools",
+      "estimatedLessons": 2,
+      "priority": 3,
+      "addedAt": "2026-10-05T09:30:00+02:00"
+    }
+  ],
+  "completedTopics": [
+    {
       "topic": "Agent Runtime & Workspace",
       "source": "concepts/agent.md, concepts/agent-workspace.md",
-      "difficulty": "beginner",
-      "section": "Core",
-      "estimatedLessons": 2,
-      "priority": 1,
-      "addedAt": "2026-09-10T21:33:00+02:00"
+      "completedAt": "2026-09-11T10:00:00+02:00",
+      "lessonFile": "2026-09-11_agent-runtime-workspace.md"
     },
     {
       "topic": "Session Management & Routing",
       "source": "concepts/session.md",
-      "difficulty": "beginner",
-      "section": "Core",
-      "estimatedLessons": 2,
-      "priority": 1,
-      "addedAt": "2026-09-10T21:33:00+02:00"
+      "completedAt": "2026-09-11T10:06:00+02:00",
+      "lessonFile": "2026-09-11_session-management-routing.md"
     },
     {
       "topic": "Memory System Overview",
       "source": "concepts/memory.md",
-      "difficulty": "beginner",
-      "section": "Core",
-      "estimatedLessons": 2,
-      "priority": 1,
-      "addedAt": "2026-09-10T21:33:00+02:00"
+      "completedAt": "2026-09-14T10:00:00+02:00",
+      "lessonFile": "2026-09-14_memory-system-overview.md"
     },
     {
       "topic": "Tools Overview & Categories",
       "source": "tools/index.md",
-      "difficulty": "beginner",
-      "section": "Tools",
-      "estimatedLessons": 1,
-      "priority": 2,
-      "addedAt": "2026-09-10T21:33:00+02:00"
+      "completedAt": "2026-09-15T10:00:00+02:00",
+      "lessonFile": "2026-09-15_tools-overview-categories.md"
     },
     {
       "topic": "Exec Tool & Shell Execution",
       "source": "tools/exec.md",
-      "difficulty": "intermediate",
-      "section": "Tools",
-      "estimatedLessons": 3,
-      "priority": 1,
-      "addedAt": "2026-09-10T21:33:00+02:00"
+      "completedAt": "2026-09-16T10:00:00+02:00",
+      "lessonFile": "2026-09-16_exec-tool-shell-execution.md"
+    },
+    {
+      "topic": "Automations & Scheduling",
+      "source": "automation/index.md, automation/cron-jobs.md, automation/cron-jobs/schedules.md, automation/cron-jobs/payloads.md, automation/cron-jobs/delivery.md",
+      "completedAt": "2026-09-17T10:30:00+02:00",
+      "lessonFile": "2026-09-17_automations-scheduling-overview.md"
     },
     {
       "topic": "Sub-agents & Delegation",
       "source": "tools/subagents.md",
-      "difficulty": "intermediate",
-      "section": "Core",
-      "estimatedLessons": 2,
-      "priority": 2,
-      "addedAt": "2026-09-10T21:33:00+02:00"
+      "completedAt": "2026-09-18T10:00:00+02:00",
+      "lessonFile": "2026-09-18_sub-agents-delegation.md"
     },
     {
-      "topic": "Automations & Scheduling",
-      "source": "automation/index.md, automation/cron-jobs.md",
-      "difficulty": "intermediate",
-      "section": "Core",
-      "estimatedLessons": 3,
-      "priority": 1,
-      "addedAt": "2026-09-10T21:33:00+02:00"
+      "topic": "Secrets Tool \u2014 Credential Management",
+      "source": "tools/secrets.md",
+      "completedAt": "2026-09-21T14:30:00+02:00",
+      "lessonFile": "2026-09-21_secrets-tool-credential-management.md"
+    },
+    {
+      "topic": "Skills System \u2014 Tool Instruction Files",
+      "source": "tools/skills.md, tools/creating-skills.md, tools/skills-config.md, tools/skill-workshop.md",
+      "completedAt": "2026-09-22T10:00:00+02:00",
+      "lessonFile": "2026-09-22_skills-system-tool-instruction-files.md"
+    },
+    {
+      "topic": "Thinking Levels & Directives",
+      "source": "tools/thinking.md",
+      "completedAt": "2026-09-30T10:00:00+02:00",
+      "lessonFile": "2026-09-30_thinking-levels-directives.md"
+    },
+    {
+      "topic": "Model Providers & Selection",
+      "source": "concepts/model-providers.md, concepts/models.md",
+      "completedAt": "2026-10-01T10:00:00+02:00",
+      "lessonFile": "2026-10-01_model-providers-selection.md"
+    },
+    {
+      "topic": "Model Failover & Resilience",
+      "source": "concepts/model-failover.md",
+      "completedAt": "2026-10-02T10:00:00+02:00",
+      "lessonFile": "2026-10-02_model-failover-resilience.md"
     }
   ],
-  "completedTopics": [],
   "skippedTopics": [],
-  "totalLessonsDelivered": 0,
-  "currentStreak": 0,
-  "lastLessonDate": null,
-  "nextResearchDate": "2026-09-14T10:00:00+02:00",
+  "totalLessonsDelivered": 12,
+  "currentStreak": 13,
+  "lastLessonDate": "2026-10-02",
+  "nextResearchDate": "2026-10-12T09:30:00+02:00",
   "researchJobId": "a4d548e1-9dda-4917-9be0-2f7fae348584",
   "deliveryJobId": "59423975-1f51-4c31-b0b7-1b5e5b12c03a",
   "createdAt": "2026-09-10T21:32:00+02:00",
-  "updatedAt": "2026-09-10T21:33:00+02:00"
+  "updatedAt": "2026-10-05T09:30:00+02:00"
 }
