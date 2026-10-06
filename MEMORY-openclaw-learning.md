@@ -57,7 +57,11 @@ Lowest priority number wins, `addedAt` breaks ties · Quick Check one open quest
 - Owner stays `agent:sokka-orchestrator:main` (archiving the dedicated sessions may still disable the jobs). Rollback = `sessionKey: agent:sokka-orchestrator:main`.
 - Both payloads `thinking: medium` (set by user). Only `sessionKey`, `description`, `message` changed.
 - Lesson commit timing: lessons wait until the next Monday research run; untracked files in `lessons/` are not a failure.
-- Daily job was paused by the user during the rewrite; re-enable after the manual test.
+- Daily job was paused by the user during the rewrite and re-enabled after the manual test (confirmed by user 2026-10-06).
+
+### Manual test 2026-10-06 10:20 — passed
+Forced daily run: "Context: What the Model Sees", lesson 14 of Phase 1, streak 5 (continued from 4), source `concepts/context.md`. Quick Check was one open question with the answer in `<details>`. State: `totalLessonsDelivered` 14, queue 7 → 6, Phase 1 has 9 completed topics, no root `completedTopics`, trailing newline present. No commit made; lesson file and `progress.json` stay uncommitted until Monday's research run. Delivered to Openclaw Daily Learning, not Home.
+- Minor: the run wrote `lastUpdated` as a full timestamp. Daily payload step 7 now says "today's ISO date (YYYY-MM-DD, no time)" (applied to the live job 2026-10-06, user-approved; draft `tmp/payload_daily.md` updated). Not yet verified on a run; first check is tomorrow's 10:00 lesson.
 
 ### Open: end-of-curriculum behaviour (deferred)
 Nothing defines what happens when all 4 phases are complete (see copilot-learning MEMORY for the options; maintenance mode recommended). Decide before Phase 4 nears completion. Also open: first real zuko hand-off is AI Act's 2026-10-12 08:30 run; ours is 09:30 the same day.
