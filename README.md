@@ -6,8 +6,8 @@ An automated learning system that teaches OpenClaw concepts daily through curate
 
 This project implements a structured learning approach for mastering OpenClaw:
 
-- **Weekly Research (Mondays 10:00 AM):** Explores OpenClaw documentation, identifies teachable topics, and maintains a learning queue
-- **Daily Lessons (Mon-Fri 2:00 PM):** Delivers one curated lesson from the queue directly to the user
+- **Weekly Research (Mondays 09:30 Europe/Rome):** Explores OpenClaw documentation, identifies teachable topics, and maintains a learning queue
+- **Daily Lessons (Mon-Fri 10:00 Europe/Rome):** Delivers one curated lesson from the queue directly to the user
 
 ## Structure
 
@@ -29,23 +29,23 @@ openclaw-learning/
 
 ## Automations
 
-1. **Weekly Research Job** - Mondays 10:00 AM Europe/Rome
+1. **Weekly Research Job** - Mondays 09:30 Europe/Rome
    - Checks OpenClaw version for changes
    - Explores documentation for new/important topics
    - Updates the learning queue
-   - Delegates to zuko-researcher
+   - Delegates to zuko-researcher (sokka only spawns, waits, delivers)
+   - Runs in the *Openclaw Weekly Research* session
 
-2. **Daily Lesson Delivery** - Mon-Fri 2:00 PM Europe/Rome
+2. **Daily Lesson Delivery** - Mon-Fri 10:00 Europe/Rome
    - Extracts next topic from queue
    - Formats as an engaging lesson
-   - Delivers to the main chat session
+   - Delivers to the *Openclaw Daily Learning* session
 
 ## Current Status
 
-- OpenClaw Version: 2026.9.3 (1391f7c)
-- System Status: Active
-- Learning Phase: Core Concepts
+- OpenClaw version / phase / progress: see `state/progress.json` (`currentVersion`, `currentPhase`, `stats`) — not duplicated here.
+- Curriculum (4 phases, 50 one-lesson items): `docs/planning/00_master_strategy.md`.
 
 ## Usage
 
-Lessons are delivered automatically to the main chat. To check progress or request specific topics, ask the orchestrator.
+Lessons are delivered automatically to the *Openclaw Daily Learning* session (group `openclaw-learning`). To check progress or request specific topics, ask the orchestrator. Untracked files in `lessons/` are expected: the weekly research job commits them on Mondays.
