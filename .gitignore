@@ -1,0 +1,7 @@
+tmp/
+trash/
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/
