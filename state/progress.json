@@ -2,7 +2,7 @@
   "currentVersion": {
     "version": "2026.9.3",
     "hash": "1391f7c",
-    "checkedAt": "2026-10-05T09:30:00+02:00"
+    "checkedAt": "2026-10-12T09:30:00+02:00"
   },
   "currentPhase": "phase_1_core",
   "phases": {
@@ -49,6 +49,21 @@
           "topic": "Session State Awareness",
           "completedDate": "2026-10-05",
           "lessonFile": "2026-10-05_session-state-awareness.md"
+        },
+        {
+          "topic": "Context: What the Model Sees",
+          "completedDate": "2026-10-06",
+          "lessonFile": "2026-10-06_context-what-the-model-sees.md"
+        },
+        {
+          "topic": "System Prompt Assembly",
+          "completedDate": "2026-10-08",
+          "lessonFile": "2026-10-08_system-prompt-assembly.md"
+        },
+        {
+          "topic": "Agent Loop Lifecycle",
+          "completedDate": "2026-10-09",
+          "lessonFile": "2026-10-09_agent-loop-lifecycle.md"
         }
       ]
     },
@@ -70,6 +85,11 @@
           "topic": "Model Failover & Resilience",
           "completedDate": "2026-10-02",
           "lessonFile": "2026-10-02_model-failover-resilience.md"
+        },
+        {
+          "topic": "Heartbeat Automation",
+          "completedDate": "2026-10-07",
+          "lessonFile": "2026-10-07_heartbeat-automation.md"
         }
       ]
     },
@@ -97,38 +117,6 @@
   },
   "queue": [
     {
-      "topic": "Heartbeat Automation",
-      "source": "gateway/heartbeat.md",
-      "difficulty": "intermediate",
-      "section": "phase_2_gateway",
-      "priority": 2,
-      "addedAt": "2026-09-21T10:00:00+02:00"
-    },
-    {
-      "topic": "Context: What the Model Sees",
-      "source": "concepts/context.md",
-      "difficulty": "beginner",
-      "section": "phase_1_core",
-      "priority": 1,
-      "addedAt": "2026-10-05T09:30:00+02:00"
-    },
-    {
-      "topic": "System Prompt Assembly",
-      "source": "concepts/system-prompt.md",
-      "difficulty": "intermediate",
-      "section": "phase_1_core",
-      "priority": 2,
-      "addedAt": "2026-10-05T09:30:00+02:00"
-    },
-    {
-      "topic": "Agent Loop Lifecycle",
-      "source": "concepts/agent-loop.md",
-      "difficulty": "intermediate",
-      "section": "phase_1_core",
-      "priority": 2,
-      "addedAt": "2026-10-05T09:30:00+02:00"
-    },
-    {
       "topic": "Compaction & Session Pruning",
       "source": "concepts/compaction.md, concepts/session-pruning.md",
       "difficulty": "intermediate",
@@ -151,18 +139,74 @@
       "section": "phase_2_gateway",
       "priority": 2,
       "addedAt": "2026-10-05T09:30:00+02:00"
+    },
+    {
+      "topic": "Gateway Architecture & Runbook",
+      "source": "concepts/architecture.md, gateway/index.md",
+      "difficulty": "intermediate",
+      "section": "phase_2_gateway",
+      "priority": 2,
+      "addedAt": "2026-10-12T09:30:00+02:00"
+    },
+    {
+      "topic": "Configuration Basics",
+      "source": "gateway/configuration.md, gateway/configuration-reference.md",
+      "difficulty": "intermediate",
+      "section": "phase_2_gateway",
+      "priority": 2,
+      "addedAt": "2026-10-12T09:30:00+02:00"
+    },
+    {
+      "topic": "SecretRef & the Shared Secret Store",
+      "source": "gateway/secrets.md",
+      "difficulty": "intermediate",
+      "section": "phase_2_gateway",
+      "priority": 2,
+      "addedAt": "2026-10-12T09:30:00+02:00"
+    },
+    {
+      "topic": "Sandboxing vs Tool Policy vs Elevated",
+      "source": "gateway/sandboxing.md, gateway/sandbox-vs-tool-policy-vs-elevated.md",
+      "difficulty": "advanced",
+      "section": "phase_2_gateway",
+      "priority": 2,
+      "addedAt": "2026-10-12T09:30:00+02:00"
+    },
+    {
+      "topic": "Authentication & OAuth",
+      "source": "gateway/authentication.md, concepts/oauth.md",
+      "difficulty": "intermediate",
+      "section": "phase_2_gateway",
+      "priority": 2,
+      "addedAt": "2026-10-12T09:30:00+02:00"
+    },
+    {
+      "topic": "Doctor, Health & Troubleshooting",
+      "source": "gateway/doctor.md, gateway/health.md, gateway/troubleshooting.md",
+      "difficulty": "intermediate",
+      "section": "phase_2_gateway",
+      "priority": 2,
+      "addedAt": "2026-10-12T09:30:00+02:00"
+    },
+    {
+      "topic": "Background Tasks & Run History",
+      "source": "automation/tasks.md, automation/cron-jobs/managing-jobs.md",
+      "difficulty": "intermediate",
+      "section": "phase_2_gateway",
+      "priority": 2,
+      "addedAt": "2026-10-12T09:30:00+02:00"
     }
   ],
   "skippedTopics": [],
   "stats": {
-    "totalLessonsDelivered": 13,
-    "currentStreak": 4,
-    "lastLessonDate": "2026-10-05"
+    "totalLessonsDelivered": 17,
+    "currentStreak": 8,
+    "lastLessonDate": "2026-10-09"
   },
   "settings": {
     "researchJobId": "a4d548e1-9dda-4917-9be0-2f7fae348584",
     "deliveryJobId": "59423975-1f51-4c31-b0b7-1b5e5b12c03a"
   },
   "createdAt": "2026-09-10T21:32:00+02:00",
-  "lastUpdated": "2026-10-06"
+  "lastUpdated": "2026-10-09"
 }
