@@ -34,6 +34,13 @@ Project-specific memory for the OpenClaw Learning System.
 
 Authoritative curriculum (50 one-lesson items) is in `docs/planning/00_master_strategy.md`. Keys: `phase_1_core`, `phase_2_gateway`, `phase_3_advanced`, `phase_4_deep`.
 
+## Git Remote & Push (2026-10-14)
+
+- **Remote `origin`:** `git@github.com:Ricardosalinasmtz/openclaw-learning.git` (added 2026-10-14, user request; no push yet).
+- `git ls-remote origin` returned success with no refs — the GitHub repo is empty, so the first push needs no `pull --rebase` (same as copilot-learning 2026-10-08).
+- SSH: same key and `Host github.com` block as copilot-learning (`~/.ssh/id_ed25519_github_macbook`, fingerprint `SHA256:3lhaskaZc6eaCAgHH4ScDzeTOeuMw9K/wfBqwV1urRk`); `ls-remote` authenticated, so the key was unlocked at setup time. If a later push fails with `Permission denied (publickey)`, re-run `SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh ssh-add ~/.ssh/id_ed25519_github_macbook` in the user's terminal.
+- At setup time, uncommitted work in the tree (daily-lesson `progress.json` edits + 3 untracked lessons waiting for Monday's research commit) — pushing only sends committed history.
+
 ## Review 2026-10-06 (ported from copilot-learning and ai-act-learning)
 
 User-approved; full rationale for each pattern is in the sibling MEMORY files. Backups: `tmp/progress.pre-restructure.json`, `tmp/version_history.pre-restructure.json` (git-ignored). Payload drafts: `tmp/payload_weekly.md`, `tmp/payload_daily.md`; curriculum draft `tmp/curriculum_draft.md`.
