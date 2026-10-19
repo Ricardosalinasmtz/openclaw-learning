@@ -2,13 +2,13 @@
   "currentVersion": {
     "version": "2026.9.3",
     "hash": "1391f7c",
-    "checkedAt": "2026-10-12T09:30:00+02:00"
+    "checkedAt": "2026-10-19T09:32:59+02:00"
   },
-  "currentPhase": "phase_1_core",
+  "currentPhase": "phase_2_gateway",
   "phases": {
     "phase_1_core": {
       "name": "Core Concepts",
-      "status": "in_progress",
+      "status": "completed",
       "completedTopics": [
         {
           "topic": "Agent Runtime & Workspace",
@@ -64,6 +64,16 @@
           "topic": "Agent Loop Lifecycle",
           "completedDate": "2026-10-09",
           "lessonFile": "2026-10-09_agent-loop-lifecycle.md"
+        },
+        {
+          "topic": "Compaction & Session Pruning",
+          "completedDate": "2026-10-12",
+          "lessonFile": "2026-10-12_compaction-session-pruning.md"
+        },
+        {
+          "topic": "Memory Search & Hybrid Retrieval",
+          "completedDate": "2026-10-13",
+          "lessonFile": "2026-10-13_memory-search-hybrid-retrieval.md"
         }
       ]
     },
@@ -90,6 +100,21 @@
           "topic": "Heartbeat Automation",
           "completedDate": "2026-10-07",
           "lessonFile": "2026-10-07_heartbeat-automation.md"
+        },
+        {
+          "topic": "Exec Approvals & Allowlists",
+          "completedDate": "2026-10-14",
+          "lessonFile": "2026-10-14_exec-approvals-allowlists.md"
+        },
+        {
+          "topic": "Gateway Architecture & Runbook",
+          "completedDate": "2026-10-15",
+          "lessonFile": "2026-10-15_gateway-architecture-runbook.md"
+        },
+        {
+          "topic": "Configuration Basics",
+          "completedDate": "2026-10-16",
+          "lessonFile": "2026-10-16_configuration-basics.md"
         }
       ]
     },
@@ -116,46 +141,6 @@
     }
   },
   "queue": [
-    {
-      "topic": "Compaction & Session Pruning",
-      "source": "concepts/compaction.md, concepts/session-pruning.md",
-      "difficulty": "intermediate",
-      "section": "phase_1_core",
-      "priority": 2,
-      "addedAt": "2026-10-05T09:30:00+02:00"
-    },
-    {
-      "topic": "Memory Search & Hybrid Retrieval",
-      "source": "concepts/memory-search.md",
-      "difficulty": "intermediate",
-      "section": "phase_1_core",
-      "priority": 2,
-      "addedAt": "2026-10-05T09:30:00+02:00"
-    },
-    {
-      "topic": "Exec Approvals & Allowlists",
-      "source": "tools/exec-approvals.md",
-      "difficulty": "advanced",
-      "section": "phase_2_gateway",
-      "priority": 2,
-      "addedAt": "2026-10-05T09:30:00+02:00"
-    },
-    {
-      "topic": "Gateway Architecture & Runbook",
-      "source": "concepts/architecture.md, gateway/index.md",
-      "difficulty": "intermediate",
-      "section": "phase_2_gateway",
-      "priority": 2,
-      "addedAt": "2026-10-12T09:30:00+02:00"
-    },
-    {
-      "topic": "Configuration Basics",
-      "source": "gateway/configuration.md, gateway/configuration-reference.md",
-      "difficulty": "intermediate",
-      "section": "phase_2_gateway",
-      "priority": 2,
-      "addedAt": "2026-10-12T09:30:00+02:00"
-    },
     {
       "topic": "SecretRef & the Shared Secret Store",
       "source": "gateway/secrets.md",
@@ -195,18 +180,42 @@
       "section": "phase_2_gateway",
       "priority": 2,
       "addedAt": "2026-10-12T09:30:00+02:00"
+    },
+    {
+      "topic": "Multi-agent Routing & Bindings",
+      "source": "concepts/multi-agent.md, concepts/agent-bindings.md",
+      "difficulty": "intermediate",
+      "section": "phase_3_advanced",
+      "priority": 2,
+      "addedAt": "2026-10-19T09:30:00+02:00"
+    },
+    {
+      "topic": "Session Tools & Sub-agent Yield Handoff",
+      "source": "concepts/session-tool.md, concepts/subagent-yield-handoff.md",
+      "difficulty": "intermediate",
+      "section": "phase_3_advanced",
+      "priority": 2,
+      "addedAt": "2026-10-19T09:30:00+02:00"
+    },
+    {
+      "topic": "Channels Overview & Routing",
+      "source": "channels/index.md, channels/channel-routing.md, channels/telegram.md",
+      "difficulty": "intermediate",
+      "section": "phase_3_advanced",
+      "priority": 2,
+      "addedAt": "2026-10-19T09:30:00+02:00"
     }
   ],
   "skippedTopics": [],
   "stats": {
-    "totalLessonsDelivered": 17,
-    "currentStreak": 8,
-    "lastLessonDate": "2026-10-09"
+    "totalLessonsDelivered": 22,
+    "currentStreak": 13,
+    "lastLessonDate": "2026-10-16"
   },
   "settings": {
     "researchJobId": "a4d548e1-9dda-4917-9be0-2f7fae348584",
     "deliveryJobId": "59423975-1f51-4c31-b0b7-1b5e5b12c03a"
   },
   "createdAt": "2026-09-10T21:32:00+02:00",
-  "lastUpdated": "2026-10-09"
+  "lastUpdated": "2026-10-16"
 }
