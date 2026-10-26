@@ -2,9 +2,9 @@
   "currentVersion": {
     "version": "2026.9.3",
     "hash": "1391f7c",
-    "checkedAt": "2026-10-19T09:32:59+02:00"
+    "checkedAt": "2026-10-26T09:34:50+01:00"
   },
-  "currentPhase": "phase_2_gateway",
+  "currentPhase": "phase_3_advanced",
   "phases": {
     "phase_1_core": {
       "name": "Core Concepts",
@@ -79,7 +79,7 @@
     },
     "phase_2_gateway": {
       "name": "Gateway, Configuration & Safety",
-      "status": "in_progress",
+      "status": "completed",
       "completedTopics": [
         {
           "topic": "Automations & Scheduling",
@@ -87,7 +87,7 @@
           "lessonFile": "2026-09-17_automations-scheduling-overview.md"
         },
         {
-          "topic": "Secrets Tool — Credential Management",
+          "topic": "Secrets Tool \u2014 Credential Management",
           "completedDate": "2026-09-21",
           "lessonFile": "2026-09-21_secrets-tool-credential-management.md"
         },
@@ -115,6 +115,31 @@
           "topic": "Configuration Basics",
           "completedDate": "2026-10-16",
           "lessonFile": "2026-10-16_configuration-basics.md"
+        },
+        {
+          "topic": "SecretRef & the Shared Secret Store",
+          "completedDate": "2026-10-19",
+          "lessonFile": "2026-10-19_secretref-shared-secret-store.md"
+        },
+        {
+          "topic": "Sandboxing vs Tool Policy vs Elevated",
+          "completedDate": "2026-10-20",
+          "lessonFile": "2026-10-20_sandboxing-vs-tool-policy-vs-elevated.md"
+        },
+        {
+          "topic": "Authentication & OAuth",
+          "completedDate": "2026-10-21",
+          "lessonFile": "2026-10-21_authentication-oauth.md"
+        },
+        {
+          "topic": "Doctor, Health & Troubleshooting",
+          "completedDate": "2026-10-22",
+          "lessonFile": "2026-10-22_doctor-health-troubleshooting.md"
+        },
+        {
+          "topic": "Background Tasks & Run History",
+          "completedDate": "2026-10-23",
+          "lessonFile": "2026-10-23_background-tasks-run-history.md"
         }
       ]
     },
@@ -128,7 +153,7 @@
           "lessonFile": "2026-09-18_sub-agents-delegation.md"
         },
         {
-          "topic": "Skills System — Tool Instruction Files",
+          "topic": "Skills System \u2014 Tool Instruction Files",
           "completedDate": "2026-09-22",
           "lessonFile": "2026-09-22_skills-system-tool-instruction-files.md"
         }
@@ -141,46 +166,6 @@
     }
   },
   "queue": [
-    {
-      "topic": "SecretRef & the Shared Secret Store",
-      "source": "gateway/secrets.md",
-      "difficulty": "intermediate",
-      "section": "phase_2_gateway",
-      "priority": 2,
-      "addedAt": "2026-10-12T09:30:00+02:00"
-    },
-    {
-      "topic": "Sandboxing vs Tool Policy vs Elevated",
-      "source": "gateway/sandboxing.md, gateway/sandbox-vs-tool-policy-vs-elevated.md",
-      "difficulty": "advanced",
-      "section": "phase_2_gateway",
-      "priority": 2,
-      "addedAt": "2026-10-12T09:30:00+02:00"
-    },
-    {
-      "topic": "Authentication & OAuth",
-      "source": "gateway/authentication.md, concepts/oauth.md",
-      "difficulty": "intermediate",
-      "section": "phase_2_gateway",
-      "priority": 2,
-      "addedAt": "2026-10-12T09:30:00+02:00"
-    },
-    {
-      "topic": "Doctor, Health & Troubleshooting",
-      "source": "gateway/doctor.md, gateway/health.md, gateway/troubleshooting.md",
-      "difficulty": "intermediate",
-      "section": "phase_2_gateway",
-      "priority": 2,
-      "addedAt": "2026-10-12T09:30:00+02:00"
-    },
-    {
-      "topic": "Background Tasks & Run History",
-      "source": "automation/tasks.md, automation/cron-jobs/managing-jobs.md",
-      "difficulty": "intermediate",
-      "section": "phase_2_gateway",
-      "priority": 2,
-      "addedAt": "2026-10-12T09:30:00+02:00"
-    },
     {
       "topic": "Multi-agent Routing & Bindings",
       "source": "concepts/multi-agent.md, concepts/agent-bindings.md",
@@ -204,18 +189,74 @@
       "section": "phase_3_advanced",
       "priority": 2,
       "addedAt": "2026-10-19T09:30:00+02:00"
+    },
+    {
+      "topic": "Control UI & Dashboards",
+      "source": "web/control-ui.md, web/dashboards.md, concepts/session-attachment.md",
+      "difficulty": "intermediate",
+      "section": "phase_3_advanced",
+      "priority": 2,
+      "addedAt": "2026-10-26"
+    },
+    {
+      "topic": "Plugins: Install & Manage",
+      "source": "tools/plugin.md, plugins/architecture.md",
+      "difficulty": "intermediate",
+      "section": "phase_3_advanced",
+      "priority": 2,
+      "addedAt": "2026-10-26"
+    },
+    {
+      "topic": "MCP Servers",
+      "source": "tools/mcp.md",
+      "difficulty": "intermediate",
+      "section": "phase_3_advanced",
+      "priority": 2,
+      "addedAt": "2026-10-26"
+    },
+    {
+      "topic": "Skill Workshop & Self-learning",
+      "source": "tools/skill-workshop.md, tools/self-learning.md",
+      "difficulty": "intermediate",
+      "section": "phase_3_advanced",
+      "priority": 2,
+      "addedAt": "2026-10-26"
+    },
+    {
+      "topic": "Hooks & Standing Orders",
+      "source": "automation/hooks.md, automation/standing-orders.md, concepts/standing-intents.md",
+      "difficulty": "advanced",
+      "section": "phase_3_advanced",
+      "priority": 2,
+      "addedAt": "2026-10-26"
+    },
+    {
+      "topic": "Task Flow",
+      "source": "automation/taskflow.md, tools/lobster.md",
+      "difficulty": "intermediate",
+      "section": "phase_3_advanced",
+      "priority": 2,
+      "addedAt": "2026-10-26"
+    },
+    {
+      "topic": "Browser Control",
+      "source": "tools/browser.md",
+      "difficulty": "intermediate",
+      "section": "phase_3_advanced",
+      "priority": 2,
+      "addedAt": "2026-10-26"
     }
   ],
   "skippedTopics": [],
   "stats": {
-    "totalLessonsDelivered": 22,
-    "currentStreak": 13,
-    "lastLessonDate": "2026-10-16"
+    "totalLessonsDelivered": 27,
+    "currentStreak": 18,
+    "lastLessonDate": "2026-10-23"
   },
   "settings": {
     "researchJobId": "a4d548e1-9dda-4917-9be0-2f7fae348584",
     "deliveryJobId": "59423975-1f51-4c31-b0b7-1b5e5b12c03a"
   },
   "createdAt": "2026-09-10T21:32:00+02:00",
-  "lastUpdated": "2026-10-16"
+  "lastUpdated": "2026-10-23"
 }
